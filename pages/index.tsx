@@ -13,32 +13,32 @@ export default function Home() {
       {
           reviewerName: 'Grace Williams',
           videoUrl: '/videos/1_Grace.mp4',
-          poster: '/1_poster.png'
+          poster: '/1_post.png'
       },
       {
           reviewerName: 'Hollie White',
           videoUrl: '/videos/2_Hollie.mp4',
-          poster: '/2_poster.png'
+          poster: '/2_post.png'
       },
       {
           reviewerName: 'Kathryn Baker',
           videoUrl: '/videos/3_Kathryn.mp4',
-          poster: '/3_poster.png'
+          poster: '/3_post.png'
       },
       {
           reviewerName: 'Siobhan Thomas',
           videoUrl: '/videos/4_Siobhan.mp4',
-          poster: '/4_poster.png'
+          poster: '/4_post.png'
       },
       {
           reviewerName: 'Beatrice Turner',
           videoUrl: '/videos/5_Beatrice_Turner.mp4',
-          poster: '/5_poster.png'
+          poster: '/5_post.png'
       },
       {
           reviewerName: 'Kiya Ellen Rose',
           videoUrl: '/videos/6_Kiya-Ellen-Rose.mp4',
-          poster: '/6_poster.png'
+          poster: '/6_post.png'
       },
   ];
 
@@ -137,13 +137,12 @@ export default function Home() {
                         {swiperInfo.map((info,index) => (
 
                             <SwiperSlide key={index}>
-                                {/*<div className={`swiper-container h-full`}>*/}
                                 <video
                                     id="my-player"
                                     className="video-js "
                                     controls
                                     preload="auto"
-
+                                    poster={info.poster}
                                     data-setup='{}'>
                                     <source src={info.videoUrl} type="video/mp4"></source>
                                     <p className="vjs-no-js">
