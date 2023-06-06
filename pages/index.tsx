@@ -36,23 +36,6 @@ export default function Home() {
       },
   ];
 
-  const breakpoints = {
-      // Small devices (landscape phones)
-      640: {
-          slidesPerView: 1,
-          spaceBetween: 10,
-      },
-      // Medium devices (tablets)
-      768: {
-          slidesPerView: 1,
-          spaceBetween: 20,
-      },
-      // Large devices (desktops)
-      1024: {
-          slidesPerView: 4,
-          spaceBetween: 20,
-      },
-  };
     return (
     <main
       className={`lg:p-[0px] p-[15px] flex min-h-screen  flex-col items-center content-center   ${inter.className}`}
@@ -116,8 +99,7 @@ export default function Home() {
             <div className={`max-w-[1124px] text-abf-black text-[27px] leading-loose`}>
                 <h3 className={`mb-8`}>OUR TESTIMONIALS</h3>
                 <div className={`swiper-parent`}>
-                    <img id="js-prev1" src="/left.svg" alt="left arrow" className="swiper-button-prev"/>
-
+                        <img id="js-prev1" src="/left.svg" alt="left arrow" className="swiper-button-prev"/>
                     <Swiper
                         slidesPerView={1}
                         spaceBetween={10}

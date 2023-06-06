@@ -1,6 +1,7 @@
 import '@/styles/globals.css'
 import type { AppProps } from 'next/app'
 import localFont from 'next/font/local';
+import Head from 'next/head';
 
 const begum = localFont({
   src: [
@@ -21,6 +22,10 @@ const grotesk = localFont({
 export default function App({ Component, pageProps }: AppProps) {
   return (
       <>
+          <Head>
+              <title>A BODY FOREVER | 90 DAY ELEVATED PROGRAMME</title>
+
+          </Head>
         <style jsx global>{`
         :root {
           /* ... */
