@@ -67,7 +67,7 @@ export default function Home() {
               Are you a busy woman looking to feel happy, healthy, and more confident in both your body and mind? Look no further than A Body Forever - the online wellness platform designed for you! Our simple and effective program can be done anywhere, anytime without completely disrupting your life.
           </p>
 
-          <p className={`text-[21px]`}>As a mum, business owner, wife, daughter, sister, friend, and boss, I understand how difficult it can be to find balance. That’s why I created A Body Forever - to offer a 360-degree approach to health that includes:</p>
+          <p className={`grostek text-center text-[21px]`}>As a mum, business owner, wife, daughter, sister, friend, and boss, I understand how difficult it can be to find balance. That’s why I created A Body Forever - to offer a 360-degree approach to health that includes:</p>
 
       </div>
         <div className={`md:p-[119px]  mt-[71px] mb-[71px] z-10 w-full  font-mono text-sm lg:flex bg-abf-ligth-grey text-center justify-center`}>
