@@ -48,7 +48,7 @@ export default function Home() {
     >
         <div className={`lg:p-[0px] p-[15px] `}>
           <div className="z-10 max-w-5xl font-mono text-sm m-auto">
-            <div className="content-center m-20 ">
+            <div className="content-center m-20 mt-10">
               <Image
                   className="m-auto"
                   src="/abf_logo.png"
