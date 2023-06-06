@@ -12,27 +12,33 @@ export default function Home() {
   const swiperInfo = [
       {
           reviewerName: 'Grace Williams',
-          videoUrl: '/videos/1_Grace.mp4'
+          videoUrl: '/videos/1_Grace.mp4',
+          poster: '/1_poster.png'
       },
       {
           reviewerName: 'Hollie White',
-          videoUrl: '/videos/2_Hollie.mp4'
+          videoUrl: '/videos/2_Hollie.mp4',
+          poster: '/2_poster.png'
       },
       {
           reviewerName: 'Kathryn Baker',
-          videoUrl: '/videos/3_Kathryn.mp4'
+          videoUrl: '/videos/3_Kathryn.mp4',
+          poster: '/3_poster.png'
       },
       {
           reviewerName: 'Siobhan Thomas',
-          videoUrl: '/videos/4_Siobhan.mp4'
+          videoUrl: '/videos/4_Siobhan.mp4',
+          poster: '/4_poster.png'
       },
       {
           reviewerName: 'Beatrice Turner',
-          videoUrl: '/videos/5_Beatrice_Turner.mp4'
+          videoUrl: '/videos/5_Beatrice_Turner.mp4',
+          poster: '/5_poster.png'
       },
       {
           reviewerName: 'Kiya Ellen Rose',
-          videoUrl: '/videos/6_Kiya-Ellen-Rose.mp4'
+          videoUrl: '/videos/6_Kiya-Ellen-Rose.mp4',
+          poster: '/6_poster.png'
       },
   ];
 
