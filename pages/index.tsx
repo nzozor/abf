@@ -44,23 +44,26 @@ export default function Home() {
 
     return (
     <main
-      className={`lg:p-[0px] p-[15px] flex min-h-screen  flex-col items-center content-center   ${inter.className}`}
+      className={`flex min-h-screen  flex-col items-center content-center   ${inter.className}`}
     >
-      <div className="z-10 max-w-5xl font-mono text-sm lg:flex">
-        <div className="content-center mb-20">
-          <Image
-              className=""
-              src="/abf_logo.png"
-              alt="A Body Forever Logo"
-              width={139}
-              height={64}
-              priority
-          />
+        <div className={`lg:p-[0px] p-[15px] `}>
+          <div className="z-10 max-w-5xl font-mono text-sm lg:flex">
+            <div className="content-center mb-20">
+              <Image
+                  className=""
+                  src="/abf_logo.png"
+                  alt="A Body Forever Logo"
+                  width={139}
+                  height={64}
+                  priority
+              />
+            </div>
+          </div>
+          <h1 className="text-abf-gold text-[43px] tracking-wider leading-tight">A BODY FOREVER</h1>
+          <h2 className="text-abf-black text-[43px] uppercase leading-tight">90 Day Elevated Programme</h2>
+
         </div>
-      </div>
-      <h1 className="text-abf-gold text-[43px] tracking-wider leading-tight">A BODY FOREVER</h1>
-      <h2 className="text-abf-black text-[43px] uppercase leading-tight">90 Day Elevated Programme</h2>
-      <div className="mt-[30px] max-w-[1124px]">
+      <div className="lg:p-[0px] p-[15px]  mt-[30px] max-w-[1124px]">
         <Image
             className=""
             src="/ABF_Font-Page-Image-02.png"
@@ -76,7 +79,7 @@ export default function Home() {
           <p className={`grostek text-center text-[21px]`}>As a mum, business owner, wife, daughter, sister, friend, and boss, I understand how difficult it can be to find balance. That’s why I created A Body Forever - to offer a 360-degree approach to health that includes:</p>
 
       </div>
-        <div className={`md:p-[119px]  mt-[71px] mb-[71px] z-10 w-full  font-mono text-sm lg:flex bg-abf-ligth-grey text-center justify-center`}>
+        <div className={`lg:p-[0px] p-[15px]  md:p-[119px]  mt-[71px] mb-[71px] z-10 w-full  font-mono text-sm lg:flex bg-abf-ligth-grey text-center justify-center`}>
          <p className={`max-w-[1124px] text-abf-gold text-[27px] leading-normal md:leading-loose`}>
           Bi weekly mentoring + coaching with me <br/>
           Physical workouts (Pilates, strength, HIIT and stretching) <br/>
@@ -85,7 +88,7 @@ export default function Home() {
         </p>
       </div>
 
-        <div className={`p-[15px] z-10 w-full   text-sm   text-center grostek max-w-[1124px] text-[21px]`}>
+        <div className={`lg:p-[0px] p-[15px]  p-[15px] z-10 w-full   text-sm   text-center grostek max-w-[1124px] text-[21px]`}>
             <p className={`grostek mb-6 text-[21px] leading-8`}>
                 Our 90-day program is designed to re-educate you on what true health means, give you the power and control to create lasting change, and help you feel fitter and stronger than ever before - setting you up for success now and forever.
 
@@ -101,7 +104,7 @@ export default function Home() {
             </a>
         </div>
 
-        <div className={`md:p-[119px] pt-10 mt-[71px] mb-[71px] z-10 w-full  font-mono text-sm lg:flex bg-abf-ligth-grey text-center justify-center`}>
+        <div className={`lg:p-[0px] p-[15px]  md:p-[119px] pt-10 mt-[71px] mb-[71px] z-10 w-full  font-mono text-sm lg:flex bg-abf-ligth-grey text-center justify-center`}>
             <div className={`max-w-[1124px] text-abf-black text-[27px] leading-loose`}>
                 <h3 className={`mb-8`}>OUR TESTIMONIALS</h3>
                 <div className={`swiper-parent`}>
