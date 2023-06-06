@@ -24,7 +24,7 @@ export default function App({ Component, pageProps }: AppProps) {
       <>
           <Head>
               <title>A BODY FOREVER | 90 DAY ELEVATED PROGRAMME</title>
-
+              <link rel="shortcut icon" href="/cropped-favicon-2-32x32.png" />
           </Head>
         <style jsx global>{`
         :root {
