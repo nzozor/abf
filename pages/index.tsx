@@ -20,7 +20,7 @@ export default function Home() {
       },
       {
           reviewerName: 'Kathryn Baker',
-          videoUrl: '/videos/3_kathryn.mp4'
+          videoUrl: '/videos/3_Kathryn.mp4'
       },
       {
           reviewerName: 'Siobhan Thomas',
@@ -155,10 +155,6 @@ export default function Home() {
                     </Swiper>
                     <img  id="js-next1" src="/right.svg" alt="right arrow" className="swiper-button-next"/>
                 </div>
-
-
-                {/*<div id="js-prev1" className="swiper-button-prev">testprev</div>*/}
-                {/*<div id="js-next1" className="swiper-button-next">testright</div>*/}
             </div>
         </div>
         <div className={`z-10 max-w-5xl font-mono text-sm lg:flex`}>
@@ -172,32 +168,6 @@ export default function Home() {
                 />
             </div>
         </div>
-        {/*<Swiper spaceBetween={20} watchSlidesProgress={true}  className="mySwiper" breakpoints={breakpoints}>*/}
-        {/*        {swiperInfo.map((info,index) => (*/}
-        {/*            <SwiperSlide key={index}>*/}
-        {/*                /!*<div className={`swiper-container h-full`}>*!/*/}
-        {/*                    <video*/}
-        {/*                        id="my-player"*/}
-        {/*                        className="video-js "*/}
-        {/*                        controls*/}
-        {/*                        preload="auto"*/}
-
-        {/*                        data-setup='{}'>*/}
-        {/*                        <source src={info.videoUrl} type="video/mp4"></source>*/}
-        {/*                        <p className="vjs-no-js">*/}
-        {/*                            To view this video please enable JavaScript, and consider upgrading to a*/}
-        {/*                            web browser that*/}
-        {/*                            <a href="https://videojs.com/html5-video-support/" target="_blank">*/}
-        {/*                                supports HTML5 video*/}
-        {/*                            </a>*/}
-        {/*                        </p>*/}
-        {/*                    </video>*/}
-        {/*                    <div className={`intervieweeName`}>Name and surname</div>*/}
-        {/*                /!*</div>*!/*/}
-        {/*            </SwiperSlide>*/}
-        {/*        ))}*/}
-        {/*</Swiper>*/}
-
     </main>
   )
 }
