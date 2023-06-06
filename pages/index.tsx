@@ -79,7 +79,7 @@ export default function Home() {
           <p className={`grostek text-center text-[21px]`}>As a mum, business owner, wife, daughter, sister, friend, and boss, I understand how difficult it can be to find balance. That’s why I created A Body Forever - to offer a 360-degree approach to health that includes:</p>
 
       </div>
-        <div className={`lg:p-[0px] p-[15px]  md:p-[119px]  mt-[71px] mb-[71px] z-10 w-full  font-mono text-sm lg:flex bg-abf-ligth-grey text-center justify-center`}>
+        <div className={`lg:p-[80px] p-[15px]  md:p-[119px]  mt-[71px] mb-[71px] z-10 w-full  font-mono text-sm lg:flex bg-abf-ligth-grey text-center justify-center`}>
          <p className={`max-w-[1124px] text-abf-gold text-[27px] leading-normal md:leading-loose`}>
           Bi weekly mentoring + coaching with me <br/>
           Physical workouts (Pilates, strength, HIIT and stretching) <br/>
@@ -104,7 +104,7 @@ export default function Home() {
             </a>
         </div>
 
-        <div className={`lg:p-[0px] p-[15px]  md:p-[119px] pt-10 mt-[71px] mb-[71px] z-10 w-full  font-mono text-sm lg:flex bg-abf-ligth-grey text-center justify-center`}>
+        <div className={`lg:p-[80px] p-[15px]  md:p-[119px] pt-10 mt-[71px] mb-[71px] z-10 w-full  font-mono text-sm lg:flex bg-abf-ligth-grey text-center justify-center`}>
             <div className={`max-w-[1124px] text-abf-black text-[27px] leading-loose`}>
                 <h3 className={`mb-8`}>OUR TESTIMONIALS</h3>
                 <div className={`swiper-parent`}>
