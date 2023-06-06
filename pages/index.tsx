@@ -1,118 +1,221 @@
 import Image from 'next/image'
 import { Inter } from 'next/font/google'
+import { Swiper, SwiperSlide } from 'swiper/react'
+import 'swiper/css'
+import { Pagination, Navigation } from "swiper";
+
 
 const inter = Inter({ subsets: ['latin'] })
 
 export default function Home() {
-  return (
+
+  const swiperInfo = [
+      {
+          reviewerName: 'Grace Williams',
+          videoUrl: '/videos/1_Grace.mp4'
+      },
+      {
+          reviewerName: 'Hollie White',
+          videoUrl: '/videos/2_Hollie.mp4'
+      },
+      {
+          reviewerName: 'Kathryn Baker',
+          videoUrl: '/videos/3_kathryn.mp4'
+      },
+      {
+          reviewerName: 'Siobhan Thomas',
+          videoUrl: '/videos/4_Siobhan.mp4'
+      },
+      {
+          reviewerName: 'Beatrice Turner',
+          videoUrl: '/videos/5_Beatrice_Turner.mp4'
+      },
+      {
+          reviewerName: 'Kiya Ellen Rose',
+          videoUrl: '/videos/6_Kiya-Ellen-Rose.mp4'
+      },
+  ];
+
+  const breakpoints = {
+      // Small devices (landscape phones)
+      640: {
+          slidesPerView: 1,
+          spaceBetween: 10,
+      },
+      // Medium devices (tablets)
+      768: {
+          slidesPerView: 1,
+          spaceBetween: 20,
+      },
+      // Large devices (desktops)
+      1024: {
+          slidesPerView: 4,
+          spaceBetween: 20,
+      },
+  };
+    return (
     <main
-      className={`flex min-h-screen flex-col items-center justify-between p-24 ${inter.className}`}
+      className={`lg:p-[0px] p-[15px] flex min-h-screen  flex-col items-center content-center   ${inter.className}`}
     >
-      <div className="z-10 w-full max-w-5xl items-center justify-between font-mono text-sm lg:flex">
-        <p className="fixed left-0 top-0 flex w-full justify-center border-b border-gray-300 bg-gradient-to-b from-zinc-200 pb-6 pt-8 backdrop-blur-2xl dark:border-neutral-800 dark:bg-zinc-800/30 dark:from-inherit lg:static lg:w-auto  lg:rounded-xl lg:border lg:bg-gray-200 lg:p-4 lg:dark:bg-zinc-800/30">
-          Get started by editing&nbsp;
-          <code className="font-mono font-bold">pages/index.tsx</code>
-        </p>
-        <div className="fixed bottom-0 left-0 flex h-48 w-full items-end justify-center bg-gradient-to-t from-white via-white dark:from-black dark:via-black lg:static lg:h-auto lg:w-auto lg:bg-none">
-          <a
-            className="pointer-events-none flex place-items-center gap-2 p-8 lg:pointer-events-auto lg:p-0"
-            href="https://vercel.com?utm_source=create-next-app&utm_medium=default-template-tw&utm_campaign=create-next-app"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            By{' '}
-            <Image
-              src="/vercel.svg"
-              alt="Vercel Logo"
-              className="dark:invert"
-              width={100}
-              height={24}
+      <div className="z-10 max-w-5xl font-mono text-sm lg:flex">
+        <div className="content-center mb-20">
+          <Image
+              className=""
+              src="/abf_logo.png"
+              alt="A Body Forever Logo"
+              width={139}
+              height={64}
               priority
-            />
-          </a>
+          />
         </div>
       </div>
-
-      <div className="relative flex place-items-center before:absolute before:h-[300px] before:w-[480px] before:-translate-x-1/2 before:rounded-full before:bg-gradient-radial before:from-white before:to-transparent before:blur-2xl before:content-[''] after:absolute after:-z-20 after:h-[180px] after:w-[240px] after:translate-x-1/3 after:bg-gradient-conic after:from-sky-200 after:via-blue-200 after:blur-2xl after:content-[''] before:dark:bg-gradient-to-br before:dark:from-transparent before:dark:to-blue-700/10 after:dark:from-sky-900 after:dark:via-[#0141ff]/40 before:lg:h-[360px]">
+      <h1 className="text-abf-gold text-[43px] tracking-wider">A BODY FOREVER</h1>
+      <h2 className="text-abf-black text-[43px] uppercase">90 Day Elevated Programme</h2>
+      <div className="mt-[30px] max-w-[1124px]">
         <Image
-          className="relative dark:drop-shadow-[0_0_0.3rem_#ffffff70] dark:invert"
-          src="/next.svg"
-          alt="Next.js Logo"
-          width={180}
-          height={37}
-          priority
+            className=""
+            src="/ABF_Font-Page-Image-02.png"
+            alt="A Body Forever Logo"
+            width={1124}
+            height={748}
+            priority
         />
+          <p className={`m-0 text-abf-black mt-[88px] text-[27px] text-center mb-10`}>
+              Are you a busy woman looking to feel happy, healthy, and more confident in both your body and mind? Look no further than A Body Forever - the online wellness platform designed for you! Our simple and effective program can be done anywhere, anytime without completely disrupting your life.
+          </p>
+
+          <p className={`text-[21px]`}>As a mum, business owner, wife, daughter, sister, friend, and boss, I understand how difficult it can be to find balance. That’s why I created A Body Forever - to offer a 360-degree approach to health that includes:</p>
+
+      </div>
+        <div className={`md:p-[119px]  mt-[71px] mb-[71px] z-10 w-full  font-mono text-sm lg:flex bg-abf-ligth-grey text-center justify-center`}>
+         <p className={`max-w-[1124px] text-abf-gold text-[27px] leading-loose`}>
+          Bi weekly mentoring + coaching with me <br/>
+          Physical workouts (Pilates, strength, HIIT and stretching) <br/>
+          Meditations + mindfulness techniques <br/>
+          A nutrition bible + meal plans
+        </p>
       </div>
 
-      <div className="mb-32 grid text-center lg:mb-0 lg:grid-cols-4 lg:text-left">
-        <a
-          href="https://nextjs.org/docs?utm_source=create-next-app&utm_medium=default-template-tw&utm_campaign=create-next-app"
-          className="group rounded-lg border border-transparent px-5 py-4 transition-colors hover:border-gray-300 hover:bg-gray-100 hover:dark:border-neutral-700 hover:dark:bg-neutral-800/30"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          <h2 className={`mb-3 text-2xl font-semibold`}>
-            Docs{' '}
-            <span className="inline-block transition-transform group-hover:translate-x-1 motion-reduce:transform-none">
-              -&gt;
-            </span>
-          </h2>
-          <p className={`m-0 max-w-[30ch] text-sm opacity-50`}>
-            Find in-depth information about Next.js features and API.
-          </p>
-        </a>
+        <div className={`p-[15px] z-10 w-full   text-sm   text-center grostek max-w-[1124px] text-[21px]`}>
+            <p className={`grostek mb-6 text-[21px] leading-8`}>
+                Our 90-day program is designed to re-educate you on what true health means, give you the power and control to create lasting change, and help you feel fitter and stronger than ever before - setting you up for success now and forever.
 
-        <a
-          href="https://nextjs.org/learn?utm_source=create-next-app&utm_medium=default-template-tw&utm_campaign=create-next-app"
-          className="group rounded-lg border border-transparent px-5 py-4 transition-colors hover:border-gray-300 hover:bg-gray-100 hover:dark:border-neutral-700 hover:dark:bg-neutral-800/30"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          <h2 className={`mb-3 text-2xl font-semibold`}>
-            Learn{' '}
-            <span className="inline-block transition-transform group-hover:translate-x-1 motion-reduce:transform-none">
-              -&gt;
-            </span>
-          </h2>
-          <p className={`m-0 max-w-[30ch] text-sm opacity-50`}>
-            Learn about Next.js in an interactive course with&nbsp;quizzes!
-          </p>
-        </a>
+            </p>
+            <p className={`grostek mb-6 text-[21px] leading-8`}>
+                This 90 day program has already transformed countless lives and I have been blown away with the results! Ready to learn more? Book a call with me through the link below and let’s connect. Change can be hard, but with our proven tools and easy-to-follow step-by-step process, results are 100% guaranteed. Don’t miss out - join A Body Forever today!</p>
+            <p className={`grostek text-[21px] leading-8`}>
+                With Love, <br/>
+                Amy (Founder)
+            </p>
+            <a href="https://calendly.com/abodyforever/chat-with-amy-from-abf?month=2023-06" target={`_blank`}>
+                <button className={`grostek bg-abf-green p-4 pl-6 pr-6 text-white mt-10 tracking-widest uppercase text-[17px]`}>book a call ON Calendly</button>
+            </a>
+        </div>
 
-        <a
-          href="https://vercel.com/templates?framework=next.js&utm_source=create-next-app&utm_medium=default-template-tw&utm_campaign=create-next-app"
-          className="group rounded-lg border border-transparent px-5 py-4 transition-colors hover:border-gray-300 hover:bg-gray-100 hover:dark:border-neutral-700 hover:dark:bg-neutral-800/30"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          <h2 className={`mb-3 text-2xl font-semibold`}>
-            Templates{' '}
-            <span className="inline-block transition-transform group-hover:translate-x-1 motion-reduce:transform-none">
-              -&gt;
-            </span>
-          </h2>
-          <p className={`m-0 max-w-[30ch] text-sm opacity-50`}>
-            Discover and deploy boilerplate example Next.js&nbsp;projects.
-          </p>
-        </a>
+        <div className={`md:p-[119px] pt-10 mt-[71px] mb-[71px] z-10 w-full  font-mono text-sm lg:flex bg-abf-ligth-grey text-center justify-center`}>
+            <div className={`max-w-[1124px] text-abf-black text-[27px] leading-loose`}>
+                <h3 className={`mb-8`}>OUR TESTIMONIALS</h3>
+                <div className={`swiper-parent`}>
+                    <img id="js-prev1" src="/left.svg" alt="left arrow" className="swiper-button-prev"/>
 
-        <a
-          href="https://vercel.com/new?utm_source=create-next-app&utm_medium=default-template-tw&utm_campaign=create-next-app"
-          className="group rounded-lg border border-transparent px-5 py-4 transition-colors hover:border-gray-300 hover:bg-gray-100 hover:dark:border-neutral-700 hover:dark:bg-neutral-800/30"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          <h2 className={`mb-3 text-2xl font-semibold`}>
-            Deploy{' '}
-            <span className="inline-block transition-transform group-hover:translate-x-1 motion-reduce:transform-none">
-              -&gt;
-            </span>
-          </h2>
-          <p className={`m-0 max-w-[30ch] text-sm opacity-50`}>
-            Instantly deploy your Next.js site to a shareable URL with Vercel.
-          </p>
-        </a>
-      </div>
+                    <Swiper
+                        slidesPerView={1}
+                        spaceBetween={10}
+                        pagination={{
+                            clickable: true,
+                        }}
+                        breakpoints={{
+                            640: {
+                                slidesPerView: 2,
+                                spaceBetween: 20,
+                            },
+                            768: {
+                                slidesPerView: 2,
+                                spaceBetween: 40,
+                            },
+                            1024: {
+                                slidesPerView: 4,
+                                spaceBetween: 50,
+                            },
+                        }}
+                        navigation={{
+                            nextEl: '.swiper-button-next',
+                            prevEl: '.swiper-button-prev',
+                        }}
+
+                        modules={[Pagination, Navigation]}
+                        className="mySwiper"
+                    >
+                        {swiperInfo.map((info,index) => (
+
+                            <SwiperSlide key={index}>
+                                {/*<div className={`swiper-container h-full`}>*/}
+                                <video
+                                    id="my-player"
+                                    className="video-js "
+                                    controls
+                                    preload="auto"
+
+                                    data-setup='{}'>
+                                    <source src={info.videoUrl} type="video/mp4"></source>
+                                    <p className="vjs-no-js">
+                                        To view this video please enable JavaScript, and consider upgrading to a
+                                        web browser that
+                                        <a href="https://videojs.com/html5-video-support/" target="_blank">
+                                            supports HTML5 video
+                                        </a>
+                                    </p>
+                                </video>
+                                <div className={`intervieweeName`}>{info.reviewerName}</div>
+                                {/*</div>*/}
+                            </SwiperSlide>
+                        ))}
+                    </Swiper>
+                    <img  id="js-next1" src="/right.svg" alt="right arrow" className="swiper-button-next"/>
+                </div>
+
+
+                {/*<div id="js-prev1" className="swiper-button-prev">testprev</div>*/}
+                {/*<div id="js-next1" className="swiper-button-next">testright</div>*/}
+            </div>
+        </div>
+        <div className={`z-10 max-w-5xl font-mono text-sm lg:flex`}>
+            <div className={`content-center mb-20`}>
+                <Image
+                    src="/abf_logo.png"
+                    alt="A Body Forever Logo"
+                    width={139}
+                    height={64}
+                    priority
+                />
+            </div>
+        </div>
+        {/*<Swiper spaceBetween={20} watchSlidesProgress={true}  className="mySwiper" breakpoints={breakpoints}>*/}
+        {/*        {swiperInfo.map((info,index) => (*/}
+        {/*            <SwiperSlide key={index}>*/}
+        {/*                /!*<div className={`swiper-container h-full`}>*!/*/}
+        {/*                    <video*/}
+        {/*                        id="my-player"*/}
+        {/*                        className="video-js "*/}
+        {/*                        controls*/}
+        {/*                        preload="auto"*/}
+
+        {/*                        data-setup='{}'>*/}
+        {/*                        <source src={info.videoUrl} type="video/mp4"></source>*/}
+        {/*                        <p className="vjs-no-js">*/}
+        {/*                            To view this video please enable JavaScript, and consider upgrading to a*/}
+        {/*                            web browser that*/}
+        {/*                            <a href="https://videojs.com/html5-video-support/" target="_blank">*/}
+        {/*                                supports HTML5 video*/}
+        {/*                            </a>*/}
+        {/*                        </p>*/}
+        {/*                    </video>*/}
+        {/*                    <div className={`intervieweeName`}>Name and surname</div>*/}
+        {/*                /!*</div>*!/*/}
+        {/*            </SwiperSlide>*/}
+        {/*        ))}*/}
+        {/*</Swiper>*/}
+
     </main>
   )
 }
