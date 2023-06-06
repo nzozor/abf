@@ -47,8 +47,8 @@ export default function Home() {
       className={`flex min-h-screen  flex-col items-center content-center   ${inter.className}`}
     >
         <div className={`lg:p-[0px] p-[15px] `}>
-          <div className="z-10 max-w-5xl font-mono text-sm lg:flex">
-            <div className="content-center mb-20">
+          <div className="z-10 max-w-5xl font-mono text-sm m-auto">
+            <div className="content-center m-20">
               <Image
                   className=""
                   src="/abf_logo.png"
