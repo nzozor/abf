@@ -58,8 +58,8 @@ export default function Home() {
           />
         </div>
       </div>
-      <h1 className="text-abf-gold text-[43px] tracking-wider">A BODY FOREVER</h1>
-      <h2 className="text-abf-black text-[43px] uppercase">90 Day Elevated Programme</h2>
+      <h1 className="text-abf-gold text-[43px] tracking-wider leading-tight">A BODY FOREVER</h1>
+      <h2 className="text-abf-black text-[43px] uppercase leading-tight">90 Day Elevated Programme</h2>
       <div className="mt-[30px] max-w-[1124px]">
         <Image
             className=""
@@ -77,7 +77,7 @@ export default function Home() {
 
       </div>
         <div className={`md:p-[119px]  mt-[71px] mb-[71px] z-10 w-full  font-mono text-sm lg:flex bg-abf-ligth-grey text-center justify-center`}>
-         <p className={`max-w-[1124px] text-abf-gold text-[27px] leading-loose`}>
+         <p className={`max-w-[1124px] text-abf-gold text-[27px] leading-normal md:leading-loose`}>
           Bi weekly mentoring + coaching with me <br/>
           Physical workouts (Pilates, strength, HIIT and stretching) <br/>
           Meditations + mindfulness techniques <br/>
