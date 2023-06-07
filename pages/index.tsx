@@ -165,7 +165,10 @@ export default function Home() {
                 </div>
             </div>
         </div>
-        <div className={`z-10 max-w-5xl font-mono text-sm lg:flex`}>
+        <div className={`z-10 max-w-5xl font-mono text-sm lg:flex flex-col items-center`}>
+            <a href="https://www.youtube.com/channel/UC2_w_DM2OSLC-vOZEnGvzVA" target={`_blank`}>
+                <button className={`grostek bg-abf-green p-4 pl-6 pr-6 text-white mt-10 mb-20 tracking-widest uppercase text-[17px]`}>Move with abf</button>
+            </a>
             <div className={`content-center mb-20`}>
                 <Image
                     src="/abf_logo.png"

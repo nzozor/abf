@@ -25,6 +25,7 @@ export default function App({ Component, pageProps }: AppProps) {
           <Head>
               <title>A BODY FOREVER | 90 DAY ELEVATED PROGRAMME</title>
               <link rel="shortcut icon" href="/cropped-favicon-2-32x32.png" />
+              <meta name="facebook-domain-verification” content=“m82mr5nth1zt0ge4u7ppcocl3fyn0i" />
           </Head>
         <style jsx global>{`
         :root {
