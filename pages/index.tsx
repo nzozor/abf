@@ -46,7 +46,7 @@ export default function Home() {
     <main
       className={`flex min-h-screen  flex-col items-center content-center   ${inter.className}`}
     >
-        <div className={`lg:p-[0px] p-[15px] `}>
+        <div className={`lg:p-[0px] p-[15px]`}>
           <div className="z-10 max-w-5xl font-mono text-sm m-auto">
             <div className="content-center m-20 mt-10">
               <Image
@@ -59,8 +59,8 @@ export default function Home() {
               />
             </div>
           </div>
-          <h1 className="text-abf-gold text-[43px] tracking-wider leading-tight">A BODY FOREVER</h1>
-          <h2 className="text-abf-black text-[43px] uppercase leading-tight">90 Day Elevated Programme</h2>
+          <h1 className="text-abf-gold text-[43px] tracking-wider leading-tight text-center">A BODY FOREVER</h1>
+          <h2 className="text-abf-black text-[43px] uppercase leading-tight content-center text-center ">90 Day Elevated Programme</h2>
 
         </div>
       <div className="lg:p-[0px] p-[15px]  mt-[30px] max-w-[1124px]">
