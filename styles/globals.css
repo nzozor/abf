@@ -64,7 +64,7 @@ button {
 #js-next1, #js-prev1 {
   /*width: 10px;*/
   margin: 10px;
-
+  cursor: pointer;
 
 }
 @media screen and (min-width: 680px) {

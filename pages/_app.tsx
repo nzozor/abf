@@ -31,7 +31,6 @@ export default function App({ Component, pageProps }: AppProps) {
               <meta property="og:title" content="A BODY FOREVER | 90 DAY ELEVATED PROGRAMME" />
               <meta property="og:description" content="Are you a busy woman looking to feel happy, healthy, and more confident in both your body and mind? Look no further than A Body Forever - the online wellness platform designed for you! Our simple and effective program can be done anywhere, anytime without completely disrupting your life." />
               <meta property="og:image:alt" content="A Body Forever Logo" />
-
           </Head>
         <style jsx global>{`
         :root {
