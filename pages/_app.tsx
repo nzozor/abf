@@ -31,6 +31,23 @@ export default function App({ Component, pageProps }: AppProps) {
               <meta property="og:title" content="A BODY FOREVER | 90 DAY ELEVATED PROGRAMME" />
               <meta property="og:description" content="Are you a busy woman looking to feel happy, healthy, and more confident in both your body and mind? Look no further than A Body Forever - the online wellness platform designed for you! Our simple and effective program can be done anywhere, anytime without completely disrupting your life." />
               <meta property="og:image:alt" content="A Body Forever Logo" />
+              <script>
+                  !function(f,b,e,v,n,t,s)
+                  {if(f.fbq)return;n=f.fbq=function(){n.callMethod?
+                      n.callMethod.apply(n,arguments):n.queue.push(arguments)};
+                      if(!f._fbq)f._fbq=n;n.push=n;n.loaded=!0;n.version='2.0';
+                      n.queue=[];t=b.createElement(e);t.async=!0;
+                      t.src=v;s=b.getElementsByTagName(e)[0];
+                      s.parentNode.insertBefore(t,s)}(window,document,'script',
+                  'https://connect.facebook.net/en_US/fbevents.js');
+                  fbq('init', '1291372741815383');
+                  fbq('track', 'PageView');
+              </script>
+              <noscript>
+                  <img height="1" width="1"
+                       src="https://www.facebook.com/tr?id=1291372741815383&ev=PageView
+&noscript=1"/>
+              </noscript>
           </Head>
         <style jsx global>{`
         :root {
