@@ -99,8 +99,8 @@ export default function Home() {
                 With Love, <br/>
                 Amy (Founder)
             </p>
-            <a href="https://calendly.com/abodyforever/chat-with-amy-from-abf?month=2023-06" target={`_blank`}>
-                <button className={`grostek bg-abf-green p-4 pl-6 pr-6 text-white mt-10 tracking-widest uppercase text-[17px]`}>book a call ON Calendly</button>
+            <a href="https://link.leaddec.com/widget/bookings/abodyforever" target={`_blank`}>
+                <button className={`grostek bg-abf-green p-4 pl-6 pr-6 text-white mt-10 tracking-widest uppercase text-[17px]`}>book a call</button>
             </a>
         </div>
 
